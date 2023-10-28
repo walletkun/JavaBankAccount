@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class BankAccount {
     private String accountNumber;
@@ -51,14 +49,6 @@ public class BankAccount {
     
     public ArrayList<Transaction> getTransactionHistory() {
         return transactions;
-    }
-
-    private String getCurrentDate() {
-        // Define the desired date format
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        // Get the current date and format it
-        LocalDateTime now = LocalDateTime.now();
-        return formatter.format(now);
     }
 
 
